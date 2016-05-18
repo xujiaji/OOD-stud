@@ -1,0 +1,16 @@
+@startuml
+
+
+class 鸟{
+    +飞翔()
+}
+
+class 鸵鸟
+
+class 麻雀
+
+hide members
+show 鸟 methods
+鸵鸟 --|> 鸟
+麻雀 --|> 鸟
+@enduml

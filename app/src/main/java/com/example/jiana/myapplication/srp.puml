@@ -1,0 +1,27 @@
+@startuml
+
+interface 农活{
+
+}
+
+interface 耕地{
+    耕水田()
+}
+
+interface 机械耕地{
+    耕菜地()
+}
+
+class 牛{
+
+}
+
+class 耕地机{
+
+}
+
+耕地 --|> 农活
+机械耕地 --|> 耕地
+牛 --|> 耕地
+耕地机 --|> 机械耕地
+@enduml

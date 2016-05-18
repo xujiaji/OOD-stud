@@ -1,0 +1,20 @@
+@startuml
+
+class S{
+    +void fun3()
+}
+
+
+class T{
+    +void fun1()
+    +void fun2()
+}
+
+class P{
+    -T q2
+}
+
+
+S --|> T:->继承
+P --> T:->类P中对T进行编写
+@enduml

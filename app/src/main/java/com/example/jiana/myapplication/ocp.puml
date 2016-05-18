@@ -1,0 +1,13 @@
+@startuml
+
+class 电灯
+
+class 电源
+
+interface 灯座 <<interface>>
+
+hide members
+电灯 --> 灯座
+电源 ..|> 灯座
+
+@enduml

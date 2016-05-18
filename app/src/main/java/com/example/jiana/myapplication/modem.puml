@@ -1,0 +1,20 @@
+@startuml
+
+interface DataChannel<<interface>>{
+    +send(char c)
+    +char recv()
+}
+note left:数据通信接口
+
+interface Connection<<interface>>{
+    +dial(String pno)
+    +hangup()
+}
+note right:连接处理接口
+class Modem{
+
+}
+
+Modem ..|> DataChannel:实现
+Modem ..|> Connection
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+
+interface 鸟 {
+    +吃()
+    +走()
+}
+
+interface 飞鸟 {
+    +飞()
+}
+
+class 鸵鸟 {
+
+}
+hide members
+show 鸟 methods
+show 飞鸟 methods
+飞鸟 --|> 鸟:继承
+鸵鸟 ..|> 鸟:实现
+麻雀 --|> 飞鸟
+@enduml
